@@ -10,7 +10,7 @@ plugins by Ravi Shankar on the Logi Marketplace:
 | Vizhi for Codex (Codex CLI) | coming with the plugin's next release | macOS / Windows |
 | Vizhi Desktop (ChatGPT / Codex desktop app) | coming with the plugin's release | macOS |
 
-Download page: **https://rshankras.github.io/keypad-profiles/**
+Download page: **https://www.rshankar.com/keypad-profiles/**
 
 ## How to import a profile
 
