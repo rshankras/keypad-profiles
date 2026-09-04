@@ -1,0 +1,17 @@
+name: Validate profile downloads
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check profile archives and download links
+        run: bash scripts/validate-profiles.sh

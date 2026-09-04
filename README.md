@@ -7,7 +7,8 @@ plugins by Ravi Shankar on the Logi Marketplace:
 |---|---|---|
 | Claude Console (Claude Code) | [`ClaudeConsole-Keypad.lp5`](profiles/ClaudeConsole-Keypad.lp5) | macOS (Terminal) |
 | Claude Console (Claude Code) | [`ClaudeConsole-Windows.lp5`](profiles/ClaudeConsole-Windows.lp5) | Windows (Windows Terminal) |
-| Vizhi for Codex (Codex CLI) | coming with the plugin's next release | macOS / Windows |
+| Vizhi for Codex (Codex CLI) | [`VizhiCodex-Keypad.lp5`](profiles/VizhiCodex-Keypad.lp5) | macOS (Terminal) |
+| Vizhi for Codex (Codex CLI) | [`VizhiCodex-Windows.lp5`](profiles/VizhiCodex-Windows.lp5) | Windows (Windows Terminal) |
 | Vizhi Desktop (ChatGPT / Codex desktop app) | coming with the plugin's release | macOS |
 
 Download page: **https://www.rshankar.com/keypad-profiles/**
@@ -22,6 +23,18 @@ Download page: **https://www.rshankar.com/keypad-profiles/**
    Every key is pre-mapped; rebind or rearrange anything afterwards.
 
 Import once. Updating or reinstalling the plugin leaves your profile in place.
+
+## Maintaining the downloads
+
+The `.lp5` files in `profiles/` are the public release copies. When a default layout changes:
+
+1. Export and verify the macOS and Windows profiles in Logi Options+.
+2. Replace the matching files in `profiles/` without changing their stable filenames.
+3. Run `bash scripts/validate-profiles.sh` before committing.
+4. Merge to `main`; GitHub Pages serves the updated downloads at the same URLs.
+
+Pull requests and pushes are also checked automatically. The check rejects a missing, empty or
+invalid profile archive and a download that is not linked from both this README and the Pages site.
 
 ## Support
 

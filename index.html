@@ -26,7 +26,7 @@
   .card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
   .card .meta { grid-column: 1; }
   .btn { grid-column: 2; grid-row: 1 / span 2; justify-self: end; display: inline-block; padding: 9px 16px; border-radius: 999px; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 600; font-size: 0.93rem; white-space: nowrap; }
-  .btn.soon { background: var(--soft); color: var(--muted); font-weight: 500; }
+  .btn:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
   ol { padding-left: 1.25rem; }
   li { margin: 6px 0; }
   code { background: var(--soft); padding: 1px 6px; border-radius: 5px; font-size: 0.92em; }
@@ -57,9 +57,14 @@
   <h2>Vizhi for Codex · Codex CLI</h2>
   <div class="grid">
     <div class="card">
-      <h3>macOS and Windows</h3>
-      <p class="meta">Arrives with the plugin's next Marketplace release.</p>
-      <span class="btn soon">Coming soon</span>
+      <h3>macOS</h3>
+      <p class="meta">Binds to Terminal. Sessions, approvals, prompts, navigation, voice and Git actions pre-mapped.</p>
+      <a class="btn" href="profiles/VizhiCodex-Keypad.lp5" download aria-label="Download the Vizhi for Codex profile for macOS">Download .lp5</a>
+    </div>
+    <div class="card">
+      <h3>Windows</h3>
+      <p class="meta">Binds to Windows Terminal with the same task-organized pages as the macOS profile.</p>
+      <a class="btn" href="profiles/VizhiCodex-Windows.lp5" download aria-label="Download the Vizhi for Codex profile for Windows">Download .lp5</a>
     </div>
   </div>
 
