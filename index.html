@@ -86,6 +86,16 @@
   </ol>
   <p>Import once. Updating or reinstalling the plugin leaves your profile in place.</p>
 
+  <h2 id="codex-hook-trust">Codex hook trust</h2>
+  <p>Vizhi installs its own local Codex lifecycle hooks but cannot approve them for you. In Codex, run <code>/hooks</code>, review the Vizhi entries, and trust them. Then start a new session or submit a prompt; the session and approval indicators will become live after the first trusted event. Never bypass hook trust globally.</p>
+
+  <h2 id="live-status-bridge">Claude Console live status</h2>
+  <p>Claude Console adds a status line and five hooks to <code>~/.claude/settings.json</code> only after you confirm from a live key. Your existing entries are retained and <code>settings.json.claude-console.bak</code> is refreshed before every plugin change.</p>
+  <p>To remove only Claude Console's entries, hold a live key and choose <strong>Turn off</strong>, or run <code>bash ~/.claude/claude-console/scripts/uninstall.sh --unwire</code>. This leaves <code>~/.claude/claude-console/no-autowire</code>, so the plugin stays off until you deliberately turn it on again.</p>
+
+  <h2 id="windows-terminal">Windows Terminal</h2>
+  <p>Import the Windows-specific profile and run Codex or Claude Code in Windows Terminal. If Terminal is not open, terminal-dependent keys refuse safely; direct typing keys remain available. For classic Command Prompt or PowerShell sessions, set <strong>Settings → System → For developers → Terminal</strong> to <strong>Windows Terminal</strong> and start a new session. Elevated sessions cannot be controlled by unelevated Logi Options+.</p>
+
   <footer>
     Copyright © 2026 Ravi Shankar. Free to download and import for use with the plugins above; no other rights granted.
     Problems or requests: <a href="https://github.com/rshankras/keypad-profiles/issues">open an issue</a>.

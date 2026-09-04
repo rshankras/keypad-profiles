@@ -24,6 +24,31 @@ Download page: **https://www.rshankar.com/keypad-profiles/**
 
 Import once. Updating or reinstalling the plugin leaves your profile in place.
 
+## Codex hook trust
+
+Vizhi installs its own local Codex lifecycle hooks but cannot approve them for you. In Codex, run
+`/hooks`, review the Vizhi entries, and trust them. Start a new session or submit a prompt; the
+session and approval indicators become live after the first trusted event. Never bypass hook trust
+globally.
+
+## Claude Console live status bridge
+
+Claude Console adds a status line and five hooks to `~/.claude/settings.json` only after you confirm
+from a live key. It retains your existing entries and refreshes
+`settings.json.claude-console.bak` before every plugin change.
+
+To remove only Claude Console's entries, hold a live key and choose **Turn off**, or run
+`bash ~/.claude/claude-console/scripts/uninstall.sh --unwire`. This leaves
+`~/.claude/claude-console/no-autowire`, so the plugin remains off until you deliberately turn it on.
+
+## Windows Terminal
+
+Import the Windows-specific profile and run Codex or Claude Code in Windows Terminal. If Terminal
+is not open, terminal-dependent keys refuse safely; direct typing keys remain available. For a
+classic Command Prompt or PowerShell session, set **Settings → System → For developers → Terminal**
+to **Windows Terminal** and start a new session. Elevated sessions cannot be controlled by
+unelevated Logi Options+.
+
 ## Maintaining the downloads
 
 The `.lp5` files in `profiles/` are the public release copies. When a default layout changes:
