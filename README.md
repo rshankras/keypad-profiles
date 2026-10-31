@@ -9,12 +9,12 @@ layouts they were; they are no longer updated.
 
 | Old file (here) | Current file (vizhi.dev) |
 |---|---|
-| `ClaudeConsole-Keypad.lp5` | `VizhiClaudeCode-Terminal.lp5` |
+| [`ClaudeConsole-Keypad.lp5`](profiles/ClaudeConsole-Keypad.lp5) | `VizhiClaudeCode-Terminal.lp5` |
 | — | `VizhiClaudeCode-iTerm2.lp5` (new in 2.4.0) |
-| `ClaudeConsole-Windows.lp5` | `VizhiClaudeCode-WindowsTerminal.lp5` |
-| `VizhiCodex-Keypad.lp5` | `VizhiCodex-Terminal.lp5` |
+| [`ClaudeConsole-Windows.lp5`](profiles/ClaudeConsole-Windows.lp5) | `VizhiClaudeCode-WindowsTerminal.lp5` |
+| [`VizhiCodex-Keypad.lp5`](profiles/VizhiCodex-Keypad.lp5) | `VizhiCodex-Terminal.lp5` |
 | — | `VizhiCodex-iTerm2.lp5` (new in 1.7.0) |
-| `VizhiCodex-Windows.lp5` | `VizhiCodex-WindowsTerminal.lp5` |
+| [`VizhiCodex-Windows.lp5`](profiles/VizhiCodex-Windows.lp5) | `VizhiCodex-WindowsTerminal.lp5` |
 
 Claude Console is now **Vizhi for Claude Code**; the keys are unchanged, and a layout imported earlier
 keeps working. Importing a new file next to an old one adds a second profile in Options+; delete the
